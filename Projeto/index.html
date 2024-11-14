@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento de Consumo Energético</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script>
+            document.addEventListener("DOMContentLoaded", function() {
+        const sections = document.querySelectorAll("section");
+        sections.forEach((section, index) => {
+            setTimeout(() => {
+                section.classList.add("show");
+            }, index * 300); // Atraso de 300ms entre cada seção
+        });
+    });
+    </script>
+    <header>
+        <a href="tech.html"><button class="btn">Iniciar Monitoramento</button></a>
+        <h1>Monitoramento de Consumo Energético</h1>
+        <nav>
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#problema">Problema</a></li>
+                <li><a href="#solucao">Solução Geral</a></li>
+                <li><a href="#dataset">Dataset</a></li>
+                <li><a href="#metodologia">Metodologia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introducao">
+            <h2>1. Introdução</h2>
+            <p>O projeto visa desenvolver um sistema de monitoramento de consumo energético em residências, com o objetivo de auxiliar os usuários a compreenderem melhor seus hábitos de consumo e, consequentemente, promoverem um uso mais eficiente e sustentável da energia elétrica.</p>
+        </section>
+
+        <section id="problema">
+            <h2>2. Exemplificando o Problema</h2>
+            <p>A crescente demanda por energia elétrica e a necessidade de reduzir o impacto ambiental têm impulsionado o desenvolvimento de soluções para o monitoramento e gestão do consumo energético.</p>
+            <ul>
+                <li>Visualizar o consumo em tempo real.</li>
+                <li>Gerar relatórios históricos.</li>
+                <li>Comparar o consumo.</li>
+                <li>Identificar equipamentos que mais consomem energia.</li>
+            </ul>
+        </section>
+
+        <section id="solucao">
+            <h2>3. Solução Geral</h2>
+            <p>A solução proposta consiste em um sistema composto pelos seguintes componentes:</p>
+            <ul>
+                <li>Sensores (simulados) para coleta de dados.</li>
+                <li>Microcontrolador (simulado) para processamento dos dados.</li>
+                <li>Banco de dados relacional para armazenamento dos dados.</li>
+                <li>Interface (aplicativo ou web) para visualização e interação.</li>
+            </ul>
+        </section>
+
+        <section id="dataset">
+            <h2>4. Dataset Kaggle</h2>
+            <p>Para treinar e validar os modelos de machine learning, utilizaremos o dataset Kaggle “Solar Panel Images Clean and Faulty Images”. Este dataset foi escolhido por se alinhar diretamente com o objetivo do projeto de IOT.</p>
+        </section>
+
+        <section id="metodologia">
+            <h2>5. Metodologia</h2>
+            <ol>
+                <li>Coleta de dados: Simulação da coleta de dados.</li>
+                <li>Pré-processamento dos dados.</li>
+                <li>Cálculo da potência.</li>
+                <li>Desenvolvimento da interface.</li>
+                <li>Análise de dados.</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Monitoramento de Consumo Energético EcoWatt. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
